@@ -10,7 +10,7 @@ let actualQuestion = 0;
 // perguntas
 const questions = [
   {
-    question: 'Por que a AWS é mais econômica do que os datacenters tradicionais para aplicações com diferentes workloads de computação??',
+    question: 'Por que a AWS é mais econômica do que os datacenters tradicionais para aplicações com diferentes workloads de computação?',
     answers: [
       {
         answer: 'As instâncias do Amazon EC2 podem ser executadas sob demanda quando necessário.',
