@@ -1,11 +1,10 @@
-<!-- ![banner](https://raw.githubusercontent.com/lucianesantcs/selfcare/master/design/selfcare_mockup.png) -->
 
 # Quizz de Programação
 
 Simples quiz desenvolvido com html, css, e javascript.
 <br>
 
-- <a href="https://lucianesantcs.github.io/quizz/">Live Preview</a>
+- <a href="https://github.com/AnaaQA/QuizzAWS/edit/main/README.md">Live Preview</a>
 - <a href="https://www.udemy.com/course/javascript-do-basico-ao-avancado-com-node-e-projetos/">JavaScript do básico ao avançado</a>
 
 ### Techs
@@ -21,12 +20,12 @@ Simples quiz desenvolvido com html, css, e javascript.
 
 ### Author
 
-**Luciane Santos**
+**Ana Silva**
 
-- Email: lucianesantcs@gmail.com
-- GitHub: [@lucianesantcs](https://github.com/lucianesantcs)
-- LinkedIn: [@lucianesantcs](https://linkedin.com/in/lucianesantcs)
+- Email: ana.todos.qa@gmail.com
+- GitHub: [anasilva](https://github.com/AnaaQA)
+- LinkedIn: [anasilva](https://www.linkedin.com/in/ana-analistadetesteqa-23199471)
 
 ### License
 
-Copyright © 2020 Luciane Santos / Matheus Battisti
+Copyright © 2023 Ana Silva
