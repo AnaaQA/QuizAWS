@@ -219,6 +219,8 @@ const questions = [
       },
     ],
   },
+
+  /// fim do simulado de 10 perguntas no site da AWS
   {
     question: 'Qual dos seguintes serviços  usa AWS edge locations?',
     answers: [
@@ -283,7 +285,7 @@ const questions = [
     ],
   },
   {
-    question: 'Qual serviço permite a coleta o rastreamento de métricas para serviços da AWS?',
+    question: 'Qual serviço permite a coletar e rastrear as métricas para serviços da AWS?',
     answers: [
       {
         answer: 'Amazon CloudFront',
@@ -303,7 +305,70 @@ const questions = [
       },
     ],
   },
+  {
+    question: 'Uma companhia necessita saber qual usuário foi responsável por terminar diversos serviços críticos na Amazon Elastic Cloud (Amazon EC2). Onde o cliente pode encontrar essas informações?',
+    answers: [
+      {
+        answer: 'AWS Trusted Advisor',
+        correct: false,
+      },
+      {
+        answer: 'Amazon EC2 instance usage report',
+        correct: false,
+      },
+      {
+        answer: 'Amazon CloudWatch',
+        correct: false,
+      },
+      {
+        answer: 'Amazon Cloud Trail logs',
+        correct: true,
+      },
+    ],
+  },
 
+  {
+    question: 'Qual serviço o administrador deve usar registrar novos domínios na AWS?',
+    answers: [
+      {
+        answer: 'Amazon Virtual Private Cloud (Amazon VPC) ',
+        correct: false,
+      },
+      {
+        answer: 'Amazon Route 53',
+        correct: true,
+      },
+      {
+        answer: 'Amazon  Cloud Front',
+        correct: false,
+      },
+      {
+        answer: 'Elastic load Balancing',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Qual é o valor de ter os serviços da Nuvem AWS acessíveis por meio de uma interface de programação de aplicativo (API)?',
+    answers: [
+      {
+        answer: 'Cloud resources can be managed programmatically (Os recursos da nuvem podem ser gerenciados programaticamente)',
+        correct: true,
+      },
+      {
+        answer: 'AWS infrastructure use will always be cost-optimized',
+        correct: false,
+      },
+      {
+        answer: 'All application testing is managed by AWS',
+        correct: false,
+      },
+      {
+        answer: 'Customer –owned, on –premises infrastructure becomes programmable',
+        correct: false,
+      },
+    ],
+  },
   {
     question: 'Qual dos exemplos a seguir oferece suporte ao princípio de design de nuvem "projetar para falhas e nada falhará"?',
     answers: [
@@ -410,7 +475,7 @@ const questions = [
     ],
   },
   {
-    question: 'O principal benefício de desacoplar uma aplicação é:',
+    question: 'Qual o principal benefício de desacoplar uma aplicação?',
     answers: [
       {
         answer: 'Criar uma aplicação totalmente integrado',
@@ -431,7 +496,7 @@ const questions = [
     ],
   },
   {
-    question: 'Qual das opções a seguir é um benefício de executar um aplicativo em duas zonas de disponibilidade?',
+    question: 'Qual das opções é um benefício de rodar a aplicação em duas zonas de disponibilidade?',
     answers: [
       {
         answer: 'O desempenho é aprimorado em relação à execução em uma única zona de disponibilidade.',
@@ -446,7 +511,7 @@ const questions = [
         correct: false,
       },
       {
-        answer: 'Ele aumenta a disponibilidade de um aplicativo em comparação com a execução em uma única zona de disponibilidade',
+        answer: 'Ele aumenta a disponibilidade de uma aplicação em comparação com a execução em uma única zona de disponibilidade',
         correct: true,
       },
     ],
@@ -557,7 +622,7 @@ const questions = [
     ],
   },
   {
-    question: 'Qual dos seguintes serviços relaciona o conceito de “Scaling up resources based on demand”',
+    question: 'Qual dos seguintes serviços relaciona o conceito de “Scaling UP resources based on demand”',
     answers: [
       {
         answer: 'AutoScaling',
@@ -578,27 +643,7 @@ const questions = [
     ],
   },
 
-  {
-    question: 'Qual é o valor de ter os serviços da Nuvem AWS acessíveis por meio de uma interface de programação de aplicativo (API)?',
-    answers: [
-      {
-        answer: 'Cloud resources can be managed programmatically (Os recursos da nuvem podem ser gerenciados programaticamente)',
-        correct: true,
-      },
-      {
-        answer: 'AWS infrastructure use will always be cost-optimized',
-        correct: false,
-      },
-      {
-        answer: 'All application testing is managed by AWS',
-        correct: false,
-      },
-      {
-        answer: 'Customer –owned, on –premises infrastructure becomes programmable',
-        correct: false,
-      },
-    ],
-  },
+/// fim do simulado no  youtube
 
   {
     question: 'Uma empresa exige isolamento físico de suas instâncias Amazon EC2 das instâncias de outros clientes. Qual opção de compra de instâncias atende a esse requisito?',
@@ -999,6 +1044,7 @@ const questions = [
       },
     ],
   },
+  
   ///////
   {
     question: 'Qual princípio da arquitetura da Nuvem AWS afirma que os sistemas devem reduzir as interdependências?',
