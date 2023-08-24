@@ -250,7 +250,7 @@ const questions = [
         correct: false,
       },
       {
-        answer: 'Pagando apenas pelo que usar',
+        answer: 'Pagar apenas pelo que usar',
         correct: true,
       },
       {
@@ -328,7 +328,7 @@ const questions = [
   },
 
   {
-    question: 'Qual serviço o administrador deve usar registrar novos domínios na AWS?',
+    question: 'Qual serviço o administrador deve usar oara registrar novos domínios na AWS?',
     answers: [
       {
         answer: 'Amazon Virtual Private Cloud (Amazon VPC) ',
@@ -667,28 +667,91 @@ const questions = [
     ],
   },
   {
-    question: 'Qual princípio de design da arquitetura da Nuvem AWS é compatível com a distribuição de cargas de trabalho em várias zonas de disponibilidade?',
+    question: 'Qual das opções a seguir descreve uma melhor prática de segurança que pode ser implementada usando o AWS Identity and Access Management (IAM)',
     answers: [
       {
-        answer: 'Implementação de automação',
-        correct: false,
-      },
-      {
-        answer: 'Design para agilidade',
-        correct: false,
-      },
-      {
-        answer: 'Design à prova de falhas',
+        answer: 'Desativar o acesso ao Console de Gerenciamento da AWS para todos os usuários',
         correct: true,
       },
       {
-        answer: 'Implementação de elasticidade',
+        answer: 'Gerar chaves secretas para cada usuário do IAM',
+        correct: false,
+      },
+      {
+        answer: 'Conceder permissões a usuários que precisam executar apenas uma tarefa específica',
+        correct: false,
+      },
+      {
+        answer: 'Armazenar credenciais da AWS em instâncias Amazon EC2',
         correct: false,
       },
     ],
   },
   {
-    question: 'Qual das seguintes opções é uma responsabilidade da AWS de acordo com o modelo de responsabilidade compartilhada da AWS?',
+    question: 'Quais recomendações estão incluídas nas verificações do AWS Trusted Advisor?',
+    answers: [
+      {
+        answer: 'Número de usuários na conta e Permissões de bucket do Amazon S3',
+        correct: true,
+      },
+      {
+        answer: 'Interrupções de produtos da AWS para serviços',
+        correct: false,
+      },
+      {
+        answer: 'Uso de autenticação multifator (MFA) no usuário raiz da conta da AWS',
+        correct: false,
+      },
+      {
+        answer: 'Patches de software disponíveis para instâncias Amazon EC2',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Qual produto da AWS pode criar um alarme que envia uma notificação quando um limite de faturamento é excedido?',
+    answers: [
+      {
+        answer: 'AWS Trusted Advisor',
+        correct: false,
+      },
+      {
+        answer: 'AWS CloudTrail',
+        correct: false,
+      },
+      {
+        answer: 'Amazon CloudWatch',
+        correct: true,
+      },
+      {
+        answer: 'Amazon QuickSight',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Uma empresa tem um servidor de aplicações em execução em uma instância Amazon EC2. O servidor de aplicações precisa acessar o conteúdo em um bucket privado do Amazon S3. Qual é a abordagem recomendada para atender a esse requisito?',
+    answers: [
+      {
+        answer: 'Crie uma IAM role com as permissões apropriadas. Associe a role à instância EC2',
+        correct: true,
+      },
+      {
+        answer: 'Configure uma conexão de peering de VPC para permitir a comunicação privada entre a instância EC2 e o bucket do S3',
+        correct: false,
+      },
+      {
+        answer: 'Crie uma chave de acesso compartilhada. Configure a instância EC2 para usar a chave codificada',
+        correct: false,
+      },
+      {
+        answer: 'Configure a aplicação para ler uma chave de acesso de uma fonte segura',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Qual princípio de design da arquitetura da Nuvem AWS é compatível com a distribuição de cargas de trabalho em várias zonas de disponibilidade?',
     answers: [
       {
         answer: 'Projetar a aplicação de um cliente para recuperação de desastres',
@@ -709,22 +772,22 @@ const questions = [
     ],
   },
   {
-    question: 'Qual aspecto da infraestrutura da AWS fornece implementação global de computação e armazenamento?',
+    question: 'Qual das seguintes opções é uma responsabilidade da AWS de acordo com o modelo de responsabilidade compartilhada da AWS?',
     answers: [
       {
-        answer: 'Várias zonas de disponibilidade em uma região da AWS',
+        answer: 'Implementação de automação',
         correct: false,
       },
       {
-        answer: 'Várias regiões AWS',
+        answer: 'Design para agilidade',
+        correct: false,
+      },
+      {
+        answer: 'Design à prova de falhas',
         correct: true,
       },
       {
-        answer: 'Tags',
-        correct: false,
-      },
-      {
-        answer: 'Resource Groups',
+        answer: 'Implementação de elasticidade',
         correct: false,
       },
     ],
@@ -772,6 +835,133 @@ const questions = [
     ],
   },
   {
+    question: 'Qual princípio da arquitetura da Nuvem AWS afirma que os sistemas devem reduzir as interdependências?',
+    answers: [
+      {
+        answer: 'Escalabilidade',
+        correct: false,
+      },
+      {
+        answer: 'Serviços, não servidores',
+        correct: false,
+      },
+      {
+        answer: 'Automação',
+        correct: false,
+      },
+      {
+        answer: 'Acoplamento fraco',
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: 'Qual aspecto da infraestrutura da AWS fornece implementação global de computação e armazenamento?',
+    answers: [
+      {
+        answer: 'Várias zonas de disponibilidade em uma região da AWS',
+        correct: false,
+      },
+      {
+        answer: 'Várias regiões AWS',
+        correct: true,
+      },
+      {
+        answer: 'Tags',
+        correct: false,
+      },
+      {
+        answer: 'Resource Groups',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Uma empresa está hospedando um site estático por meio de um único bucket do Amazon S3. Qual produto da AWS atingirá latência mais baixa e alta velocidade de transferência?',
+    answers: [
+      {
+        answer: 'AWS Elastic Beanstalk',
+        correct: false,
+      },
+      {
+        answer: 'Amazon DynamoDB Accelerator (DAX)',
+        correct: false,
+      },
+      {
+        answer: 'Amazon Route 53',
+        correct: false,
+      },
+      {
+        answer: 'Amazon CloudFront',
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: 'Quais recursos ou serviços relacionados à segurança a AWS oferece?',
+    answers: [
+      {
+        answer: 'Compliance completa com PCI para aplicações do cliente executadas na AWS',
+        correct: false,
+      },
+      {
+        answer: 'Verificações de segurança do AWS Trusted Advisor',
+        correct: false,
+      },
+      {
+        answer: 'Teste de penetração automatizado  e Criptografia dos dados',
+        correct: true,
+      },
+      {
+        answer: 'Detecção de conteúdo protegido por direitos autorais do Amazon S3',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Quais recursos ou produtos da AWS são compatíveis com a replicação de dados em todas as regiões AWS?',
+    answers: [
+      {
+        answer: 'Amazon RDS',
+        correct: false,
+      },
+      {
+        answer: 'Amazon EC2 instance store',
+        correct: false,
+      },
+      {
+        answer: 'AWS Storage Gateway',
+        correct: false,
+      },
+      {
+        answer: 'Amazon RDS e Amazon Elastic Block Store (Amazon EBS)',
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: 'Uma empresa precisa monitorar e receber alertas sobre eventos de login do Console de Gerenciamento da AWS que envolvem o usuário raiz da conta da AWS. ?',
+    answers: [
+      {
+        answer: 'Amazon CloudWatch',
+        correct: true,
+      },
+      {
+        answer: 'AWS Config',
+        correct: false,
+      },
+      {
+        answer: 'AWS Trusted Advisor',
+        correct: false,
+      },
+      {
+        answer: 'AWS Identity and Access Management (IAM)',
+        correct: false,
+      },
+    ],
+  },
+  
+  {
     question: 'Uma empresa quer uma conexão privada dedicada entre suas operações locais e a Nuvem AWS. Qual recurso ou produto da AWS fornecerá essa conexão',
     answers: [
       {
@@ -792,6 +982,135 @@ const questions = [
       },
     ],
   },
+  {
+    question: 'Qual modelo de preço do Amazon EC2 se ajusta com base na oferta e na demanda de instâncias EC2?',
+    answers: [
+      {
+        answer: 'Instâncias On-Demand',
+        correct: false,
+      },
+      {
+        answer: 'Instâncias reservadas',
+        correct: false,
+      },
+      {
+        answer: 'Instâncias Spot',
+        correct: true,
+      },
+      {
+        answer: 'Instâncias reservadas conversíveis',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Qual princípio de design da arquitetura da Nuvem AWS é compatível com a distribuição de cargas de trabalho em várias zonas de disponibilidade?',
+    answers: [
+      {
+        answer: 'Implementação de automação',
+        correct: false,
+      },
+      {
+        answer: 'Design para agilidade',
+        correct: false,
+      },
+      {
+        answer: 'Design à prova de falhas',
+        correct: true,
+      },
+      {
+        answer: 'Implementação de elasticidade',
+        correct: false,
+      },
+    ],
+  },
+  {
+    question: 'Qual produto da AWS fornece uma solução de armazenamento de arquivos compartilhado, simples e escalável para uso com servidores locais e instâncias Amazon EC2 baseadas em Linux?',
+    answers: [
+      {
+        answer: 'AWS Managed Services (AMS)',
+        correct: false,
+      },
+      {
+        answer: 'Amazon S3 Glacier',
+        correct: false,
+      },
+      {
+        answer: 'Amazon Elastic Block Store (Amazon EBS)',
+        correct: false,
+      },
+      {
+        answer: 'Amazon Elastic File System (Amazon EFS)',
+        correct: true,
+      },
+    ],
+  },
+
+  {
+    question: 'Qual das seguintes opções é uma responsabilidade da AWS de acordo com o modelo de responsabilidade compartilhada da AWS?',
+    answers: [
+      {
+        answer: 'Projetar a aplicação de um cliente para recuperação de desastres',
+        correct: false,
+      },
+      {
+        answer: 'Atualizar os sistemas operacionais convidados em instâncias Amazon EC2 implantadas',
+        correct: false,
+      },
+      {
+        answer: 'Configurar novos recursos em uma conta da AWS',
+        correct: false,
+      },
+      {
+        answer: 'Proteger a infraestrutura física',
+        correct: true,
+      },
+    ],
+  },
+  {
+    question: 'Quais das seguintes opções são benefícios da Nuvem AWS?',
+    answers: [
+      {
+        answer: 'As empresas precisam de uma equipe de TI maior',
+        correct: false,
+      },
+      {
+        answer: 'As despesas de capital são substituídas por despesas variáveis e A AWS é responsável pela segurança na nuvem',
+        correct: true,
+      },
+      {
+        answer: 'Os clientes recebem a mesma fatura mensal, independentemente de quais recursos eles usam',
+        correct: false,
+      },
+      {
+        answer: 'As empresas ganham maior agilidade',
+        correct: false,
+      },
+    ],
+  },
+
+  {
+    question: 'Qual das opções a seguir é uma vantagem do faturamento consolidado na AWS?',
+    answers: [
+      {
+        answer: 'Qualificação de preços por volume',
+        correct: true,
+      },
+      {
+        answer: 'Permissões de acesso compartilhado',
+        correct: false,
+      },
+      {
+        answer: 'Várias faturas para cada conta',
+        correct: false,
+      },
+      {
+        answer: 'Eliminação da necessidade de marcar recursos',
+        correct: false,
+      },
+    ],
+  },
+
   {
     question: 'Quais das opções a seguir são vantagens da Nuvem AWS?',
     answers: [
@@ -834,90 +1153,10 @@ const questions = [
       },
     ],
   },
-  {
-    question: 'Uma empresa precisa monitorar e receber alertas sobre eventos de login do Console de Gerenciamento da AWS que envolvem o usuário raiz da conta da AWS. ?',
-    answers: [
-      {
-        answer: 'Amazon CloudWatch',
-        correct: true,
-      },
-      {
-        answer: 'AWS Config',
-        correct: false,
-      },
-      {
-        answer: 'AWS Trusted Advisor',
-        correct: false,
-      },
-      {
-        answer: 'AWS Identity and Access Management (IAM)',
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Uma empresa está hospedando um site estático por meio de um único bucket do Amazon S3. Qual produto da AWS atingirá latência mais baixa e alta velocidade de transferência?',
-    answers: [
-      {
-        answer: 'AWS Elastic Beanstalk',
-        correct: false,
-      },
-      {
-        answer: 'Amazon DynamoDB Accelerator (DAX)',
-        correct: false,
-      },
-      {
-        answer: 'Amazon Route 53',
-        correct: false,
-      },
-      {
-        answer: 'Amazon CloudFront',
-        correct: true,
-      },
-    ],
-  },
-  {
-    question: 'Qual produto da AWS fornece uma solução de armazenamento de arquivos compartilhado, simples e escalável para uso com servidores locais e instâncias Amazon EC2 baseadas em Linux?',
-    answers: [
-      {
-        answer: 'AWS Managed Services (AMS)',
-        correct: false,
-      },
-      {
-        answer: 'Amazon S3 Glacier',
-        correct: false,
-      },
-      {
-        answer: 'Amazon Elastic Block Store (Amazon EBS)',
-        correct: false,
-      },
-      {
-        answer: 'Amazon Elastic File System (Amazon EFS)',
-        correct: true,
-      },
-    ],
-  },
-  {
-    question: 'Qual modelo de preço do Amazon EC2 se ajusta com base na oferta e na demanda de instâncias EC2?',
-    answers: [
-      {
-        answer: 'Instâncias On-Demand',
-        correct: false,
-      },
-      {
-        answer: 'Instâncias reservadas',
-        correct: false,
-      },
-      {
-        answer: 'Instâncias Spot',
-        correct: true,
-      },
-      {
-        answer: 'Instâncias reservadas conversíveis',
-        correct: false,
-      },
-    ],
-  },
+
+
+
+
   {
     question: 'Uma empresa tem um servidor de aplicações em execução em uma instância Amazon EC2. O servidor de aplicações precisa acessar o conteúdo em um bucket privado do Amazon S3. Qual é a abordagem recomendada para atender a esse requisito?',
     answers: [
@@ -939,6 +1178,7 @@ const questions = [
       },
     ],
   },
+
   {
     question: 'Qual produto da AWS pode criar um alarme que envia uma notificação quando um limite de faturamento é excedido?',
     answers: [
@@ -960,48 +1200,7 @@ const questions = [
       },
     ],
   },
-  {
-    question: 'Qual produto da AWS pode criar um alarme que envia uma notificação quando um limite de faturamento é excedido?',
-    answers: [
-      {
-        answer: 'AWS Trusted Advisor',
-        correct: false,
-      },
-      {
-        answer: 'AWS CloudTrail',
-        correct: false,
-      },
-      {
-        answer: 'Amazon CloudWatch',
-        correct: true,
-      },
-      {
-        answer: 'Amazon QuickSight',
-        correct: false,
-      },
-    ],
-  },
-  {
-    question: 'Quais recursos ou serviços relacionados à segurança a AWS oferece?',
-    answers: [
-      {
-        answer: 'Compliance completa com PCI para aplicações do cliente executadas na AWS',
-        correct: false,
-      },
-      {
-        answer: 'Verificações de segurança do AWS Trusted Advisor e Criptografia dos dados',
-        correct: false,
-      },
-      {
-        answer: 'Teste de penetração automatizado',
-        correct: true,
-      },
-      {
-        answer: 'Detecção de conteúdo protegido por direitos autorais do Amazon S3',
-        correct: false,
-      },
-    ],
-  },
+
   {
     question: 'Quais das seguintes opções são benefícios da Nuvem AWS?',
     answers: [
