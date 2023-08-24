@@ -56,7 +56,7 @@ const questions = [
     answers: [
       {
         answer: 'SDK da AWS',
-        correct: true,
+        correct: false,
       },
       {
         answer: 'AWS Config ',
@@ -68,7 +68,7 @@ const questions = [
       },
       {
         answer: 'AWS Marketplace',
-        correct: false,
+        correct: true,
       },
     ],
   },
@@ -147,7 +147,7 @@ const questions = [
         correct: false,
       },
       {
-        answer: 'Com a habilitação da autenticação multifator  ',
+        answer: 'Com a habilitação da autenticação multifator (MFA) ',
         correct: true,
       },
       {
@@ -283,7 +283,7 @@ const questions = [
     ],
   },
   {
-    question: 'Qual serviço permite a coleta e rastreamento de métricas para serviços da AWS?',
+    question: 'Qual serviço permite a coleta o rastreamento de métricas para serviços da AWS?',
     answers: [
       {
         answer: 'Amazon CloudFront',
@@ -303,27 +303,7 @@ const questions = [
       },
     ],
   },
-  {
-    question: 'Qual é o valor de ter os serviços da Nuvem AWS acessíveis por meio de uma interface de programação de aplicativo (API)?',
-    answers: [
-      {
-        answer: 'Cloud resources can be managed programmatically (Os recursos da nuvem podem ser gerenciados programaticamente)',
-        correct: true,
-      },
-      {
-        answer: 'AWS infrastructure use will always be cost-optimized',
-        correct: false,
-      },
-      {
-        answer: 'All application testing is managed by AWS',
-        correct: false,
-      },
-      {
-        answer: 'Customer –owned, on –premises infrastructure becomes programmable',
-        correct: false,
-      },
-    ],
-  },
+
   {
     question: 'Qual dos exemplos a seguir oferece suporte ao princípio de design de nuvem "projetar para falhas e nada falhará"?',
     answers: [
@@ -593,6 +573,28 @@ const questions = [
       },
       {
         answer: 'SUB-REDE',
+        correct: false,
+      },
+    ],
+  },
+
+  {
+    question: 'Qual é o valor de ter os serviços da Nuvem AWS acessíveis por meio de uma interface de programação de aplicativo (API)?',
+    answers: [
+      {
+        answer: 'Cloud resources can be managed programmatically (Os recursos da nuvem podem ser gerenciados programaticamente)',
+        correct: true,
+      },
+      {
+        answer: 'AWS infrastructure use will always be cost-optimized',
+        correct: false,
+      },
+      {
+        answer: 'All application testing is managed by AWS',
+        correct: false,
+      },
+      {
+        answer: 'Customer –owned, on –premises infrastructure becomes programmable',
         correct: false,
       },
     ],
